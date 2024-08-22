@@ -1,0 +1,67 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "crud-admin-panel",
+  "title": "CRUD Admin Panel",
+  "description": "An admin panel to create, read, update, and delete user entities.",
+  "icon": "icon.png",
+  "author": "thomas",
+  "categories": [
+    "Developer Tools"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "blog",
+      "title": "Library",
+      "subtitle": "Save, manage and share what's on your mind",
+      "description": "Save, manage and share what's on your mind",
+      "mode": "view"
+    }
+  ],
+  "preferences": [
+    {
+      "type": "textfield",
+      "name": "site",
+      "title": "Site",
+      "description": "Your WordPress site address",
+      "required": true
+    },
+    {
+      "type": "textfield",
+      "name": "username",
+      "title": "Username",
+      "description": "Your WordPress username",
+      "required": true
+    },
+    {
+      "type": "textfield",
+      "name": "password",
+      "title": "Password",
+      "description": "Application password",
+      "required": true
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "latest",
+    "@raycast/utils": "^1.4.7",
+    "email-validator": "^2.0.4",
+    "form-data": "^4.0.0",
+    "nanoid": "^4.0.0",
+    "node-fetch": "^3.2.10"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^1.0.6",
+    "@types/node": "18.18.4",
+    "@types/react": "18.2.27",
+    "eslint": "^8.51.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "ray publish"
+  }
+}
